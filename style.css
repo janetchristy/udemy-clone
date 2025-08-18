@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.navbar__s1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar__s1 img {
+    width: 80px;
+    height: auto;
+}
+
+.navbar__s2 {
+    padding: 10px;
+    border: solid #AC46F1 1px;
+    border-radius: 30px;
+    width: 40%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar__s2 input {
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.navbar__s2 input:focus {
+    outline: none;
+}
+
+.navbar__s3 {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+}
+
+/* Teach on Udemy*/
+
+.teachudemy{
+    position:relative;
+    cursor: pointer;
+}
+
+.teachudemy__popup{
+    position: absolute;
+    background-color: white;
+    color: black;
+    border: solid 2px white;
+    border-radius: 2px;
+    width: 100px;
+    top: 150%;
+    padding: 20px;
+    right: 0%;
+    display: none;
+}
+
+.teachudemy:hover .teachudemy__popup{
+    display: block;
+
+}
+
+.navbar__s3__menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar__s3__menu p{
+    font-size: 16px;
+    margin: 0;
+}
+
+.login {
+    border: 1px solid #6D67E2;
+    font-weight: bold;
+    color: #6D28D2;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.signup {
+    border: 1px solid #6D67E2;
+    background-color: #6D28D2;
+    font-weight: bold;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.globe {
+    border: 1px solid #2d2f31;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.sale-image {
+ position: relative;
+}
+
+.sale-image img {
+ width: 100%;
+}
+
+.sale-image__offer{
+    width: 30%;
+    border: solid black 2px;
+    background-color: white;
+    padding: 2%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    animation-name:colorchange ;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorchange {
+
+    0%{
+        transform :scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+
+    }
+}
+
+.recommended {
+    padding: 10px;
+}
+
+.recommended__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.course-card {
+    width: 250px;
+}
+
+.course-card img {
+    height: 50%;
+    width: 100%;
+}
+
+.topics {
+    padding: 10px;
+}
+
+.topics__container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+
+}
+
+.topics__container p {
+    border: solid gray 2px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+
+.popular {
+    padding: 10px;
+}
+
+.popular__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.footer {
+    padding: 30px;
+    background-color: #2A2B3F;
+    color: white;
+}
+
+.footer h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.footer__one {
+    display: flex;
+    gap: 100px;
+}
+
+.footer__one__s1 h4 {
+    margin-bottom: 15px;
+    gap: 50px;
+    margin-right: 10px;
+}
+
+.footer__one__s2 p {
+    margin-bottom: 5px;
+    color: lightgray;
+
+}
+
+.footer__one__s3 h4 {
+    margin-bottom: 15px;
+}
+
+.footer__one__s4 p {
+    margin-bottom: 5px;
+    color: lightgray;
+
+}
+
+.footer__one__s5 h4 {
+    margin-bottom: 15px;
+}
+
+.footer__one__s6 p {
+    margin-bottom: 5px;
+    color: lightgray;
+
+}
+
+.footer__one__s7 h4 {
+    margin-bottom: 15px;
+}
+
+.footer__one__s8 p {
+    margin-bottom: 5px;
+    color: lightgray;
+
+}
+
+.footer__two {
+    border-top: solid gray 2px;
+    width: 100%;
+    margin: 20px 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
